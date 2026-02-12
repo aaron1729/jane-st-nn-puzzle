@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/aaron/git/jane-st-nn-puzzle/venv/bin/pip install:*)",
+      "Bash(/Users/aaron/git/jane-st-nn-puzzle/venv/bin/python:*)",
+      "mcp__ide__executeCode",
+      "Bash(python3:*)",
+      "Bash(ssh:*)",
+      "Bash(scp:*)"
+    ]
+  }
+}
