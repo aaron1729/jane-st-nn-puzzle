@@ -1,0 +1,87 @@
+Using device: cuda
+Base MSE: 0.409771
+
+============================================================
+Leave-one-out analysis
+============================================================
+  Block  0 (48, 9): skip_MSE=0.465487 delta=+0.055717  helps
+  Block  1 (87,71): skip_MSE=0.464719 delta=+0.054948  helps
+  Block  2 (58,78): skip_MSE=0.516979 delta=+0.107208  helps
+  Block  3 (49,93): skip_MSE=0.489091 delta=+0.079320  helps
+  Block  4 (73,72): skip_MSE=0.557794 delta=+0.148023  helps
+  Block  5 (31,26): skip_MSE=0.448830 delta=+0.039059  helps
+  Block  6 (81,75): skip_MSE=0.530449 delta=+0.120678  helps
+  Block  7 ( 0,54): skip_MSE=0.432431 delta=+0.022660  helps
+  Block  8 (41,51): skip_MSE=0.475222 delta=+0.065452  helps
+  Block  9 (39,32): skip_MSE=0.450410 delta=+0.040639  helps
+  Block 10 ( 4,52): skip_MSE=0.565917 delta=+0.156146  helps
+  Block 11 (45,33): skip_MSE=0.446251 delta=+0.036480  helps
+  Block 12 ( 3,40): skip_MSE=0.411852 delta=+0.002081  helps
+  Block 13 ( 2,70): skip_MSE=0.419618 delta=+0.009847  helps
+  Block 14 (68,47): skip_MSE=0.481801 delta=+0.072030  helps
+  Block 15 (59,92): skip_MSE=0.428785 delta=+0.019014  helps
+  Block 16 (61,83): skip_MSE=0.448795 delta=+0.039024  helps
+  Block 17 (15,66): skip_MSE=0.407890 delta=-0.001881  HURTS
+  Block 18 (35,22): skip_MSE=0.502213 delta=+0.092442  helps
+  Block 19 (16,90): skip_MSE=0.439602 delta=+0.029831  helps
+  Block 20 (91,30): skip_MSE=0.414988 delta=+0.005217  helps
+  Block 21 (56,21): skip_MSE=0.435977 delta=+0.026206  helps
+  Block 22 (42,46): skip_MSE=0.445067 delta=+0.035297  helps
+  Block 23 (10,20): skip_MSE=0.507700 delta=+0.097929  helps
+  Block 24 (13,34): skip_MSE=0.428299 delta=+0.018528  helps
+  Block 25 ( 1,12): skip_MSE=0.469045 delta=+0.059275  helps
+  Block 26 (18,63): skip_MSE=0.443850 delta=+0.034079  helps
+  Block 27 (28,25): skip_MSE=0.438271 delta=+0.028500  helps
+  Block 28 (74,80): skip_MSE=0.429985 delta=+0.020214  helps
+  Block 29 (44, 7): skip_MSE=0.462308 delta=+0.052537  helps
+  Block 30 (86,76): skip_MSE=0.466872 delta=+0.057101  helps
+  Block 31 (69,89): skip_MSE=0.433840 delta=+0.024069  helps
+  Block 33 (43,53): skip_MSE=0.442114 delta=+0.032343  helps
+  Block 34 (84,96): skip_MSE=0.444525 delta=+0.034754  helps
+  Block 35 (95,79): skip_MSE=0.463473 delta=+0.053702  helps
+  Block 36 (88,38): skip_MSE=0.425479 delta=+0.015708  helps
+  Block 37 (27,17): skip_MSE=0.529677 delta=+0.119906  helps
+  Block 38 (50,36): skip_MSE=0.444431 delta=+0.034660  helps
+  Block 39 (37,67): skip_MSE=0.471524 delta=+0.061753  helps
+  Block 40 ( 5,11): skip_MSE=0.791137 delta=+0.381366  helps
+  Block 41 (23,19): skip_MSE=0.453735 delta=+0.043964  helps
+  Block 42 (94, 6): skip_MSE=0.944843 delta=+0.535072  helps
+  Block 43 (64,55): skip_MSE=0.479281 delta=+0.069510  helps
+  Block 44 (60,29): skip_MSE=0.434114 delta=+0.024343  helps
+  Block 45 (62,57): skip_MSE=0.396047 delta=-0.013723  HURTS
+  Block 46 (65,24): skip_MSE=0.421991 delta=+0.012220  helps
+  Block 47 (77,82): skip_MSE=0.442873 delta=+0.033102  helps
+
+============================================================
+Best block at each position (cyclic coordinate descent)
+============================================================
+
+--- Cycle 1 ---
+Cycle 1 MSE: 0.409771
+No improvements, converged.
+
+============================================================
+Pairwise contract swaps
+============================================================
+  Swap contracts (20,21): MSE=0.405089
+  Swap positions (9,11): MSE=0.403304
+  Swap positions (10,11): MSE=0.401426
+  Swap positions (13,22): MSE=0.394449
+  Swap positions (16,17): MSE=0.392972
+  Swap positions (20,23): MSE=0.391975
+  Swap positions (23,24): MSE=0.391783
+  Swap positions (23,25): MSE=0.389708
+  Swap positions (23,45): MSE=0.384217
+  Swap positions (28,30): MSE=0.382155
+  Swap positions (29,30): MSE=0.382065
+  Swap positions (35,36): MSE=0.381893
+  Swap positions (13,14): MSE=0.381318
+  Swap positions (14,15): MSE=0.379896
+  Swap positions (16,17): MSE=0.375775
+  Swap positions (23,24): MSE=0.374913
+  Swap positions (26,27): MSE=0.374290
+
+Final MSE: 0.3742904663
+Final ordering: [(48, 9), (87, 71), (58, 78), (49, 93), (73, 72), (31, 26), (81, 75), (0, 54), (41, 51), (45, 33), (39, 32), (4, 52), (3, 40), (68, 47), (59, 92), (42, 46), (61, 83), (15, 66), (35, 22), (16, 90), (10, 20), (56, 30), (2, 70), (91, 21), (62, 57), (13, 34), (28, 25), (18, 63), (86, 76), (74, 80), (44, 7), (69, 89), (14, 8), (43, 53), (84, 96), (88, 38), (95, 79), (27, 17), (50, 36), (37, 67), (5, 11), (23, 19), (94, 6), (64, 55), (60, 29), (1, 12), (65, 24), (77, 82)]
+Hash match: False
+Permutation: 48,9,87,71,58,78,49,93,73,72,31,26,81,75,0,54,41,51,45,33,39,32,4,52,3,40,68,47,59,92,42,46,61,83,15,66,35,22,16,90,10,20,56,30,2,70,91,21,62,57,13,34,28,25,18,63,86,76,74,80,44,7,69,89,14,8,43,53,84,96,88,38,95,79,27,17,50,36,37,67,5,11,23,19,94,6,64,55,60,29,1,12,65,24,77,82,85

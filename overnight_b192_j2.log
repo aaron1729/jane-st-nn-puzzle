@@ -1,0 +1,50 @@
+Using device: cuda
+Train rows: 4096 / Full rows: 10000, steps=900, lr=0.03
+step     1/900 tau=1.0000 loss=1.051588 mse_soft=1.049265 ent_in=3.8712 ent_out=3.8712 rowmax_in=0.0213 rowmax_out=0.0213 discrete_mse=111.986046 best_discrete=111.986046 hash=False elapsed=0.5s
+step    25/900 tau=0.9090 loss=0.851168 mse_soft=0.848978 ent_in=3.6313 ent_out=3.6660 rowmax_in=0.0458 rowmax_out=0.0446 discrete_mse=2581.489014 best_discrete=111.986046 hash=False elapsed=2.6s
+step    50/900 tau=0.8229 loss=0.644024 mse_soft=0.642121 ent_in=3.1260 ent_out=3.2156 rowmax_in=0.0936 rowmax_out=0.0893 discrete_mse=4021.220703 best_discrete=111.986046 hash=False elapsed=4.9s
+step    75/900 tau=0.7450 loss=0.503935 mse_soft=0.502356 ent_in=2.5886 ent_out=2.6767 rowmax_in=0.2138 rowmax_out=0.2053 discrete_mse=1504.367920 best_discrete=111.986046 hash=False elapsed=7.3s
+step   100/900 tau=0.6745 loss=0.413147 mse_soft=0.411961 ent_in=2.0044 ent_out=1.9510 rowmax_in=0.3474 rowmax_out=0.3884 discrete_mse=283.340607 best_discrete=111.986046 hash=False elapsed=9.6s
+step   125/900 tau=0.6107 loss=0.355050 mse_soft=0.354205 ent_in=1.6098 ent_out=1.2070 rowmax_in=0.4426 rowmax_out=0.6151 discrete_mse=130.255203 best_discrete=111.986046 hash=False elapsed=11.8s
+step   150/900 tau=0.5529 loss=0.323606 mse_soft=0.322969 ent_in=1.3563 ent_out=0.7664 rowmax_in=0.5042 rowmax_out=0.7243 discrete_mse=130.088684 best_discrete=111.986046 hash=False elapsed=14.0s
+step   175/900 tau=0.5006 loss=0.310916 mse_soft=0.310377 ent_in=1.2208 ent_out=0.5787 rowmax_in=0.5295 rowmax_out=0.7868 discrete_mse=6.467370 best_discrete=6.467370 hash=False elapsed=16.2s
+step   200/900 tau=0.4532 loss=0.305072 mse_soft=0.304572 ent_in=1.1729 ent_out=0.4938 rowmax_in=0.5319 rowmax_out=0.8119 discrete_mse=212.002518 best_discrete=6.467370 hash=False elapsed=18.3s
+step   225/900 tau=0.4103 loss=0.299856 mse_soft=0.299385 ent_in=1.1259 ent_out=0.4439 rowmax_in=0.5413 rowmax_out=0.8232 discrete_mse=131.822693 best_discrete=6.467370 hash=False elapsed=20.5s
+step   250/900 tau=0.3715 loss=0.298457 mse_soft=0.298009 ent_in=1.0935 ent_out=0.4004 rowmax_in=0.5497 rowmax_out=0.8382 discrete_mse=25.173538 best_discrete=6.467370 hash=False elapsed=22.7s
+step   275/900 tau=0.3363 loss=0.294746 mse_soft=0.294305 ent_in=1.0755 ent_out=0.3941 rowmax_in=0.5520 rowmax_out=0.8381 discrete_mse=26.292778 best_discrete=6.467370 hash=False elapsed=25.0s
+step   300/900 tau=0.3045 loss=0.292176 mse_soft=0.291740 ent_in=1.0620 ent_out=0.3910 rowmax_in=0.5558 rowmax_out=0.8389 discrete_mse=10.022815 best_discrete=6.467370 hash=False elapsed=27.3s
+step   325/900 tau=0.2756 loss=0.291385 mse_soft=0.290958 ent_in=1.0451 ent_out=0.3784 rowmax_in=0.5581 rowmax_out=0.8431 discrete_mse=25.830908 best_discrete=6.467370 hash=False elapsed=29.6s
+step   350/900 tau=0.2496 loss=0.295883 mse_soft=0.295462 ent_in=1.0337 ent_out=0.3679 rowmax_in=0.5609 rowmax_out=0.8459 discrete_mse=20.645920 best_discrete=6.467370 hash=False elapsed=31.8s
+step   375/900 tau=0.2259 loss=0.289140 mse_soft=0.288724 ent_in=1.0216 ent_out=0.3663 rowmax_in=0.5645 rowmax_out=0.8454 discrete_mse=40.103069 best_discrete=6.467370 hash=False elapsed=34.1s
+step   400/900 tau=0.2046 loss=0.289701 mse_soft=0.289290 ent_in=1.0125 ent_out=0.3562 rowmax_in=0.5653 rowmax_out=0.8500 discrete_mse=40.103069 best_discrete=6.467370 hash=False elapsed=36.3s
+step   425/900 tau=0.1852 loss=0.286123 mse_soft=0.285714 ent_in=1.0016 ent_out=0.3624 rowmax_in=0.5677 rowmax_out=0.8462 discrete_mse=139.266541 best_discrete=6.467370 hash=False elapsed=38.2s
+step   450/900 tau=0.1677 loss=0.288631 mse_soft=0.288229 ent_in=0.9891 ent_out=0.3508 rowmax_in=0.5676 rowmax_out=0.8503 discrete_mse=24.980055 best_discrete=6.467370 hash=False elapsed=40.4s
+step   475/900 tau=0.1518 loss=0.288683 mse_soft=0.288289 ent_in=0.9680 ent_out=0.3467 rowmax_in=0.5790 rowmax_out=0.8500 discrete_mse=125.138893 best_discrete=6.467370 hash=False elapsed=42.4s
+step   500/900 tau=0.1374 loss=0.289653 mse_soft=0.289259 ent_in=0.9705 ent_out=0.3408 rowmax_in=0.5764 rowmax_out=0.8514 discrete_mse=110.923347 best_discrete=6.467370 hash=False elapsed=44.6s
+step   525/900 tau=0.1244 loss=0.291721 mse_soft=0.291328 ent_in=0.9686 ent_out=0.3395 rowmax_in=0.5758 rowmax_out=0.8503 discrete_mse=125.138893 best_discrete=6.467370 hash=False elapsed=46.7s
+step   550/900 tau=0.1126 loss=0.294696 mse_soft=0.294313 ent_in=0.9442 ent_out=0.3340 rowmax_in=0.5860 rowmax_out=0.8521 discrete_mse=513.310303 best_discrete=6.467370 hash=False elapsed=48.9s
+step   575/900 tau=0.1020 loss=0.288839 mse_soft=0.288457 ent_in=0.9427 ent_out=0.3327 rowmax_in=0.5801 rowmax_out=0.8514 discrete_mse=221.044540 best_discrete=6.467370 hash=False elapsed=51.1s
+step   600/900 tau=0.0923 loss=0.290696 mse_soft=0.290315 ent_in=0.9381 ent_out=0.3317 rowmax_in=0.5790 rowmax_out=0.8502 discrete_mse=67.879677 best_discrete=6.467370 hash=False elapsed=53.3s
+step   625/900 tau=0.0836 loss=0.288507 mse_soft=0.288133 ent_in=0.9199 ent_out=0.3252 rowmax_in=0.5809 rowmax_out=0.8516 discrete_mse=98.139450 best_discrete=6.467370 hash=False elapsed=55.5s
+step   650/900 tau=0.0757 loss=0.304240 mse_soft=0.303868 ent_in=0.9207 ent_out=0.3205 rowmax_in=0.5813 rowmax_out=0.8495 discrete_mse=57.040375 best_discrete=6.467370 hash=False elapsed=57.6s
+step   675/900 tau=0.0685 loss=0.293803 mse_soft=0.293449 ent_in=0.8733 ent_out=0.3063 rowmax_in=0.5962 rowmax_out=0.8587 discrete_mse=109.666206 best_discrete=6.467370 hash=False elapsed=59.9s
+step   700/900 tau=0.0620 loss=0.325015 mse_soft=0.324677 ent_in=0.8330 ent_out=0.2929 rowmax_in=0.6192 rowmax_out=0.8640 discrete_mse=67.879677 best_discrete=6.467370 hash=False elapsed=62.1s
+step   725/900 tau=0.0562 loss=0.294118 mse_soft=0.293785 ent_in=0.8385 ent_out=0.2698 rowmax_in=0.6063 rowmax_out=0.8744 discrete_mse=81.873131 best_discrete=6.467370 hash=False elapsed=64.4s
+step   750/900 tau=0.0508 loss=0.410395 mse_soft=0.410179 ent_in=0.4600 ent_out=0.2588 rowmax_in=0.8012 rowmax_out=0.8712 discrete_mse=27.253223 best_discrete=6.467370 hash=False elapsed=66.5s
+step   775/900 tau=0.0460 loss=0.370835 mse_soft=0.370630 ent_in=0.4265 ent_out=0.2589 rowmax_in=0.8075 rowmax_out=0.8726 discrete_mse=41.775421 best_discrete=6.467370 hash=False elapsed=68.7s
+step   800/900 tau=0.0417 loss=0.348437 mse_soft=0.348219 ent_in=0.4803 ent_out=0.2448 rowmax_in=0.7709 rowmax_out=0.8821 discrete_mse=53.481548 best_discrete=6.467370 hash=False elapsed=70.9s
+step   825/900 tau=0.0377 loss=0.376029 mse_soft=0.375818 ent_in=0.4593 ent_out=0.2432 rowmax_in=0.7632 rowmax_out=0.8861 discrete_mse=39.917503 best_discrete=6.467370 hash=False elapsed=73.1s
+step   850/900 tau=0.0342 loss=0.346860 mse_soft=0.346652 ent_in=0.4368 ent_out=0.2541 rowmax_in=0.7788 rowmax_out=0.8725 discrete_mse=20.454697 best_discrete=6.467370 hash=False elapsed=75.2s
+step   875/900 tau=0.0309 loss=0.343481 mse_soft=0.343274 ent_in=0.4416 ent_out=0.2477 rowmax_in=0.7762 rowmax_out=0.8782 discrete_mse=8.541218 best_discrete=6.467370 hash=False elapsed=77.3s
+step   900/900 tau=0.0280 loss=0.346248 mse_soft=0.346043 ent_in=0.4387 ent_out=0.2443 rowmax_in=0.7725 rowmax_out=0.8789 discrete_mse=8.541218 best_discrete=6.467370 hash=False elapsed=79.4s
+
+Final metrics:
+  soft_mse_full=0.348063
+  rowmax_in_mean=0.7715
+  rowmax_out_mean=0.8790
+  ent_in_mean=0.4431
+  ent_out_mean=0.2419
+  final_discrete_mse=22.829903
+  hash_match=False
+  best_discrete_mse_seen=6.467370
+Saved results to overnight_b192_j2.json

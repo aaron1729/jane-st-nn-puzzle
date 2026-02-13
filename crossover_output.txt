@@ -1,0 +1,233 @@
+Using device: cuda
+Beam-10 MSE:  0.509697
+Beam-200 MSE: 0.409771
+
+============================================================
+Test 1: Crossover at position k
+============================================================
+  k= 0: beam10[:0]+beam200 MSE=0.409771  |  beam200[:0]+beam10 MSE=0.509697
+  k= 4: beam10[:4]+beam200 MSE=2.059936  |  beam200[:4]+beam10 MSE=8.539128
+  k= 8: beam10[:8]+beam200 MSE=0.926343  |  beam200[:8]+beam10 MSE=76.560158
+  k=12: beam10[:12]+beam200 MSE=17.448244  |  beam200[:12]+beam10 MSE=94.769745
+  k=16: beam10[:16]+beam200 MSE=7.222296  |  beam200[:16]+beam10 MSE=45.588253
+  k=20: beam10[:20]+beam200 MSE=1.721271  |  beam200[:20]+beam10 MSE=104.272499
+  k=24: beam10[:24]+beam200 MSE=21.142660  |  beam200[:24]+beam10 MSE=28.292496
+  k=28: beam10[:28]+beam200 MSE=23.468868  |  beam200[:28]+beam10 MSE=25.510307
+  k=32: beam10[:32]+beam200 MSE=72.770721  |  beam200[:32]+beam10 MSE=40.353451
+  k=36: beam10[:36]+beam200 MSE=24.627991  |  beam200[:36]+beam10 MSE=26.701599
+  k=40: beam10[:40]+beam200 MSE=3.034450  |  beam200[:40]+beam10 MSE=5.261485
+  k=44: beam10[:44]+beam200 MSE=21.017727  |  beam200[:44]+beam10 MSE=0.935441
+  k=48: beam10[:48]+beam200 MSE=0.509697  |  beam200[:48]+beam10 MSE=0.409771
+
+============================================================
+Test 2: Block agreement between beam-10 and beam-200
+============================================================
+Shared (expand,contract) pairs: 5/48
+Shared pairs: [(49, 93), (58, 78), (60, 29), (73, 72), (87, 71)]
+Same pairing: 5/48
+Different pairings:
+  Expand  0: beam10→76, beam200→54
+  Expand  1: beam10→24, beam200→12
+  Expand  2: beam10→66, beam200→70
+  Expand  3: beam10→53, beam200→40
+  Expand  4: beam10→19, beam200→52
+  Expand  5: beam10→20, beam200→11
+  Expand 10: beam10→21, beam200→20
+  Expand 13: beam10→75, beam200→34
+  Expand 14: beam10→17, beam200→8
+  Expand 15: beam10→9, beam200→66
+  Expand 16: beam10→54, beam200→90
+  Expand 18: beam10→6, beam200→63
+  Expand 23: beam10→57, beam200→19
+  Expand 27: beam10→67, beam200→17
+  Expand 28: beam10→47, beam200→25
+  Expand 31: beam10→36, beam200→26
+  Expand 35: beam10→12, beam200→22
+  Expand 37: beam10→40, beam200→67
+  Expand 39: beam10→90, beam200→32
+  Expand 41: beam10→46, beam200→51
+  Expand 42: beam10→92, beam200→46
+  Expand 43: beam10→11, beam200→53
+  Expand 44: beam10→70, beam200→7
+  Expand 45: beam10→32, beam200→33
+  Expand 48: beam10→38, beam200→9
+  Expand 50: beam10→7, beam200→36
+  Expand 56: beam10→80, beam200→21
+  Expand 59: beam10→79, beam200→92
+  Expand 61: beam10→30, beam200→83
+  Expand 62: beam10→25, beam200→57
+  Expand 64: beam10→83, beam200→55
+  Expand 65: beam10→8, beam200→24
+  Expand 68: beam10→26, beam200→47
+  Expand 69: beam10→52, beam200→89
+  Expand 74: beam10→96, beam200→80
+  Expand 77: beam10→89, beam200→82
+  Expand 81: beam10→51, beam200→75
+  Expand 84: beam10→63, beam200→96
+  Expand 86: beam10→82, beam200→76
+  Expand 88: beam10→22, beam200→38
+  Expand 91: beam10→34, beam200→30
+  Expand 94: beam10→55, beam200→6
+  Expand 95: beam10→33, beam200→79
+  Block (87, 71): pos 0 (beam10) vs 1 (beam200) — CLOSE
+  Block (58, 78): pos 2 (beam10) vs 2 (beam200) — CLOSE
+  Block (73, 72): pos 3 (beam10) vs 4 (beam200) — CLOSE
+  Block (49, 93): pos 5 (beam10) vs 3 (beam200) — CLOSE
+
+============================================================
+Test 3: MSE(output, true) for both solutions
+============================================================
+  beam10  : MSE(pred)=0.509697 MSE(true)=0.584525 |MSE(true)-target|=0.478045 corr(residuals)=0.3648
+  beam200 : MSE(pred)=0.409771 MSE(true)=0.482112 |MSE(true)-target|=0.375631 corr(residuals)=0.3939
+
+============================================================
+Test 4: Dual-scored greedy (pred MSE + true shape penalty)
+============================================================
+
+  --- alpha=0.0 ---
+  Step  0: (87, 71) MSE(pred)=0.698395
+  Step  1: (49, 72) MSE(pred)=0.651058
+  Step  2: (45, 6) MSE(pred)=0.603655
+  Step  3: (64, 11) MSE(pred)=0.571186
+  Step  4: (4, 8) MSE(pred)=0.546681
+  Step 10: (77, 33) MSE(pred)=0.468018
+  Step 20: (28, 63) MSE(pred)=0.423995
+  Step 30: (16, 54) MSE(pred)=0.404741
+  Step 40: (56, 30) MSE(pred)=0.420367
+  Step 44: (14, 78) MSE(pred)=0.478379
+  Step 45: (42, 24) MSE(pred)=0.501852
+  Step 46: (58, 70) MSE(pred)=0.629187
+  Step 47: (48, 66) MSE(pred)=1.985599
+  Final: MSE(pred)=1.985599 MSE(true)=2.042505 |MSE(true)-target|=1.936024
+
+  --- alpha=0.05 ---
+  Step  0: (87, 71) MSE(pred)=0.698395
+  Step  1: (49, 72) MSE(pred)=0.651058
+  Step  2: (45, 6) MSE(pred)=0.603655
+  Step  3: (64, 11) MSE(pred)=0.571186
+  Step  4: (4, 8) MSE(pred)=0.546681
+  Step 10: (56, 96) MSE(pred)=0.467167
+  Step 20: (15, 12) MSE(pred)=0.431628
+  Step 30: (88, 76) MSE(pred)=0.420573
+  Step 40: (1, 21) MSE(pred)=0.440847
+  Step 44: (23, 9) MSE(pred)=0.465884
+  Step 45: (14, 93) MSE(pred)=0.533837
+  Step 46: (81, 24) MSE(pred)=0.821188
+  Step 47: (43, 47) MSE(pred)=6.880608
+  Final: MSE(pred)=6.880608 MSE(true)=6.920195 |MSE(true)-target|=6.813714
+
+  --- alpha=0.1 ---
+  Step  0: (87, 71) MSE(pred)=0.698395
+  Step  1: (49, 72) MSE(pred)=0.651058
+  Step  2: (45, 6) MSE(pred)=0.603655
+  Step  3: (64, 11) MSE(pred)=0.571186
+  Step  4: (4, 8) MSE(pred)=0.546681
+  Step 10: (56, 96) MSE(pred)=0.467167
+  Step 20: (15, 12) MSE(pred)=0.431628
+  Step 30: (61, 29) MSE(pred)=0.419928
+  Step 40: (77, 70) MSE(pred)=0.433369
+  Step 44: (81, 90) MSE(pred)=0.501252
+  Step 45: (10, 30) MSE(pred)=0.481743
+  Step 46: (5, 93) MSE(pred)=0.534993
+  Step 47: (43, 66) MSE(pred)=2.417664
+  Final: MSE(pred)=2.417664 MSE(true)=2.467635 |MSE(true)-target|=2.361154
+
+  --- alpha=0.2 ---
+  Step  0: (87, 71) MSE(pred)=0.698395
+  Step  1: (49, 72) MSE(pred)=0.651058
+  Step  2: (45, 6) MSE(pred)=0.603655
+  Step  3: (64, 11) MSE(pred)=0.571186
+  Step  4: (4, 8) MSE(pred)=0.546681
+  Step 10: (56, 96) MSE(pred)=0.467167
+  Step 20: (84, 34) MSE(pred)=0.431186
+  Step 30: (73, 67) MSE(pred)=0.425398
+  Step 40: (18, 52) MSE(pred)=0.433981
+  Step 44: (5, 93) MSE(pred)=0.536959
+  Step 45: (14, 79) MSE(pred)=0.545807
+  Step 46: (81, 82) MSE(pred)=1.145706
+  Step 47: (43, 36) MSE(pred)=6.633678
+  Final: MSE(pred)=6.633678 MSE(true)=6.664036 |MSE(true)-target|=6.557555
+
+  --- alpha=0.5 ---
+  Step  0: (87, 71) MSE(pred)=0.698395
+  Step  1: (49, 72) MSE(pred)=0.651058
+  Step  2: (45, 6) MSE(pred)=0.603655
+  Step  3: (64, 11) MSE(pred)=0.571186
+  Step  4: (4, 8) MSE(pred)=0.546681
+  Step 10: (56, 96) MSE(pred)=0.467167
+  Step 20: (2, 9) MSE(pred)=0.429683
+  Step 30: (86, 54) MSE(pred)=0.427121
+  Step 40: (23, 22) MSE(pred)=0.436412
+  Step 44: (69, 93) MSE(pred)=0.462449
+  Step 45: (81, 90) MSE(pred)=0.489427
+  Step 46: (62, 25) MSE(pred)=0.506128
+  Step 47: (28, 46) MSE(pred)=0.610359
+  Final: MSE(pred)=0.610359 MSE(true)=0.689602 |MSE(true)-target|=0.583121
+
+============================================================
+Test 5: Norm-aware greedy (minimize MSE + penalize norm growth)
+============================================================
+
+  --- beta=0.0 ---
+  Step  0: (87, 71) MSE=0.698395 h_norm=0.6
+  Step  1: (49, 72) MSE=0.651058 h_norm=0.6
+  Step  2: (45, 6) MSE=0.603655 h_norm=0.8
+  Step  3: (64, 11) MSE=0.571186 h_norm=1.1
+  Step  4: (4, 8) MSE=0.546681 h_norm=1.0
+  Step 10: (77, 33) MSE=0.468018 h_norm=1.9
+  Step 20: (28, 63) MSE=0.423995 h_norm=5.5
+  Step 30: (16, 54) MSE=0.404741 h_norm=14.3
+  Step 40: (56, 30) MSE=0.420367 h_norm=34.8
+  Step 44: (14, 78) MSE=0.478379 h_norm=39.7
+  Step 45: (42, 24) MSE=0.501852 h_norm=41.3
+  Step 46: (58, 70) MSE=0.629187 h_norm=44.2
+  Step 47: (48, 66) MSE=1.985599 h_norm=55.0
+  Final: MSE=1.985599 h_norm=55.0
+
+  --- beta=0.001 ---
+  Step  0: (87, 71) MSE=0.698395 h_norm=0.6
+  Step  1: (49, 72) MSE=0.651058 h_norm=0.6
+  Step  2: (45, 6) MSE=0.603655 h_norm=0.8
+  Step  3: (64, 11) MSE=0.571186 h_norm=1.1
+  Step  4: (4, 8) MSE=0.546681 h_norm=1.0
+  Step 10: (56, 96) MSE=0.467167 h_norm=1.7
+  Step 20: (91, 32) MSE=0.433914 h_norm=4.7
+  Step 30: (68, 82) MSE=0.422392 h_norm=6.9
+  Step 40: (23, 52) MSE=0.445839 h_norm=11.5
+  Step 44: (69, 29) MSE=0.589341 h_norm=24.6
+  Step 45: (48, 21) MSE=0.806839 h_norm=28.1
+  Step 46: (81, 24) MSE=1.418651 h_norm=33.9
+  Step 47: (5, 67) MSE=6.175883 h_norm=36.7
+  Final: MSE=6.175883 h_norm=36.7
+
+  --- beta=0.01 ---
+  Step  0: (87, 71) MSE=0.698395 h_norm=0.6
+  Step  1: (49, 72) MSE=0.651058 h_norm=0.6
+  Step  2: (45, 6) MSE=0.603655 h_norm=0.8
+  Step  3: (64, 11) MSE=0.571186 h_norm=1.1
+  Step  4: (4, 8) MSE=0.546681 h_norm=1.0
+  Step 10: (1, 12) MSE=0.470341 h_norm=1.6
+  Step 20: (73, 78) MSE=0.422884 h_norm=3.5
+  Step 30: (88, 54) MSE=0.423471 h_norm=5.4
+  Step 40: (86, 36) MSE=0.461225 h_norm=11.1
+  Step 44: (48, 52) MSE=0.596692 h_norm=25.3
+  Step 45: (5, 93) MSE=0.628062 h_norm=27.3
+  Step 46: (81, 67) MSE=0.527740 h_norm=28.5
+  Step 47: (94, 57) MSE=0.864296 h_norm=31.3
+  Final: MSE=0.864296 h_norm=31.3
+
+  --- beta=0.1 ---
+  Step  0: (87, 71) MSE=0.698395 h_norm=0.6
+  Step  1: (49, 72) MSE=0.651058 h_norm=0.6
+  Step  2: (45, 6) MSE=0.603655 h_norm=0.8
+  Step  3: (4, 8) MSE=0.581821 h_norm=0.8
+  Step  4: (5, 12) MSE=0.562325 h_norm=0.8
+  Step 10: (27, 75) MSE=0.472664 h_norm=1.0
+  Step 20: (31, 63) MSE=0.431192 h_norm=1.4
+  Step 30: (64, 70) MSE=0.430524 h_norm=2.2
+  Step 40: (91, 47) MSE=0.440066 h_norm=2.8
+  Step 44: (2, 82) MSE=0.481419 h_norm=4.4
+  Step 45: (69, 7) MSE=0.588624 h_norm=5.2
+  Step 46: (28, 57) MSE=0.837807 h_norm=6.5
+  Step 47: (48, 24) MSE=2.065878 h_norm=7.5
+  Final: MSE=2.065878 h_norm=7.5

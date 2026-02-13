@@ -1,0 +1,73 @@
+Using device: cuda
+Beam width: 200
+Expand pieces: 48, Contract pieces: 48
+
+  Step  1/48: beam=200 best=0.698395 worst=0.753336 unique_last=200 gap=0.010246 (0.3s)
+  Step  2/48: beam=200 best=0.650160 worst=0.677651 unique_last=94 gap=0.000899 (20.8s)
+  Step  3/48: beam=200 best=0.603655 worst=0.625719 unique_last=68 gap=0.003520 (20.4s)
+  Step  4/48: beam=200 best=0.569246 worst=0.583958 unique_last=64 gap=0.000361 (19.3s)
+  Step  5/48: beam=200 best=0.532710 worst=0.550298 unique_last=71 gap=0.001281 (18.4s)
+  Step  6/48: beam=200 best=0.503122 worst=0.519933 unique_last=69 gap=0.000266 (16.7s)
+  Step  7/48: beam=200 best=0.475768 worst=0.493365 unique_last=113 gap=0.000420 (15.9s)
+  Step  8/48: beam=200 best=0.462479 worst=0.472220 unique_last=103 gap=0.000632 (15.2s)
+  Step  9/48: beam=200 best=0.441554 worst=0.455807 unique_last=77 gap=0.004719 (14.2s)
+  Step 10/48: beam=200 best=0.428159 worst=0.440005 unique_last=94 gap=0.000447 (13.8s)
+  Step 11/48: beam=200 best=0.415396 worst=0.424967 unique_last=70 gap=0.000886 (13.4s)
+  Step 12/48: beam=200 best=0.407092 worst=0.413709 unique_last=58 gap=0.000375 (12.8s)
+  Step 13/48: beam=200 best=0.398843 worst=0.405148 unique_last=51 gap=0.000754 (12.2s)
+  Step 14/48: beam=200 best=0.390652 worst=0.398416 unique_last=57 gap=0.000644 (11.6s)
+  Step 15/48: beam=200 best=0.384230 worst=0.391769 unique_last=109 gap=0.000763 (10.8s)
+  Step 16/48: beam=200 best=0.379211 worst=0.385323 unique_last=101 gap=0.000158 (10.2s)
+  Step 17/48: beam=200 best=0.374158 worst=0.379989 unique_last=76 gap=0.000475 (9.7s)
+  Step 18/48: beam=200 best=0.371715 worst=0.376346 unique_last=68 gap=0.000029 (9.2s)
+  Step 19/48: beam=200 best=0.367797 worst=0.373058 unique_last=88 gap=0.000133 (8.6s)
+  Step 20/48: beam=200 best=0.365836 worst=0.370315 unique_last=91 gap=0.000027 (8.2s)
+  Step 21/48: beam=200 best=0.362535 worst=0.367731 unique_last=84 gap=0.000756 (7.9s)
+  Step 22/48: beam=200 best=0.359287 worst=0.365264 unique_last=82 gap=0.000280 (7.5s)
+  Step 23/48: beam=200 best=0.356696 worst=0.362863 unique_last=77 gap=0.001307 (6.9s)
+  Step 24/48: beam=200 best=0.354766 worst=0.360741 unique_last=71 gap=0.000640 (6.4s)
+  Step 25/48: beam=200 best=0.352638 worst=0.358749 unique_last=75 gap=0.000864 (5.9s)
+  Step 26/48: beam=200 best=0.351330 worst=0.356945 unique_last=60 gap=0.000814 (5.5s)
+  Step 27/48: beam=200 best=0.350568 worst=0.355422 unique_last=59 gap=0.000325 (5.0s)
+  Step 28/48: beam=200 best=0.350219 worst=0.353778 unique_last=43 gap=0.000127 (4.6s)
+  Step 29/48: beam=200 best=0.349105 worst=0.352977 unique_last=42 gap=0.000206 (4.2s)
+  Step 30/48: beam=200 best=0.346746 worst=0.352409 unique_last=57 gap=0.001406 (3.9s)
+  Step 31/48: beam=200 best=0.347300 worst=0.352287 unique_last=50 gap=0.000088 (3.5s)
+  Step 32/48: beam=200 best=0.347041 worst=0.352133 unique_last=52 gap=0.000667 (3.3s)
+  Step 33/48: beam=200 best=0.346413 worst=0.352283 unique_last=56 gap=0.000303 (2.9s)
+  Step 34/48: beam=200 best=0.346053 worst=0.352897 unique_last=54 gap=0.000326 (2.6s)
+  Step 35/48: beam=200 best=0.347169 worst=0.353254 unique_last=64 gap=0.000047 (2.4s)
+  Step 36/48: beam=200 best=0.345880 worst=0.353949 unique_last=62 gap=0.000769 (2.1s)
+  Step 37/48: beam=200 best=0.347803 worst=0.355141 unique_last=63 gap=0.000114 (1.9s)
+  Step 38/48: beam=200 best=0.349291 worst=0.355761 unique_last=47 gap=0.000084 (1.7s)
+  Step 39/48: beam=200 best=0.348434 worst=0.357407 unique_last=50 gap=0.000548 (1.5s)
+  Step 40/48: beam=200 best=0.351640 worst=0.359500 unique_last=49 gap=0.000137 (1.4s)
+  Step 41/48: beam=200 best=0.349899 worst=0.363035 unique_last=43 gap=0.001921 (1.2s)
+  Step 42/48: beam=200 best=0.350977 worst=0.366415 unique_last=43 gap=0.000442 (1.0s)
+  Step 43/48: beam=200 best=0.354903 worst=0.372981 unique_last=44 gap=0.001533 (0.9s)
+  Step 44/48: beam=200 best=0.355063 worst=0.386277 unique_last=45 gap=0.000019 (0.7s)
+  Step 45/48: beam=200 best=0.357969 worst=0.400699 unique_last=44 gap=0.000601 (0.6s)
+  Step 46/48: beam=200 best=0.372744 worst=0.439288 unique_last=44 gap=0.000627 (0.4s)
+  Step 47/48: beam=200 best=0.386232 worst=0.578718 unique_last=45 gap=0.003306 (0.3s)
+  Step 48/48: beam=200 best=0.409771 worst=9.756374 unique_last=46 gap=0.006710 (0.2s)
+
+Beam search done in 348.6s
+
+Top 10 results:
+  #1: MSE=0.4097708762 hash=False
+    Blocks: [(48, 9), (87, 71), (58, 78), (49, 93), (73, 72), (31, 26), (81, 75), (0, 54), (41, 51), (39, 32), (4, 52), (45, 33), (3, 40), (2, 70), (68, 47), (59, 92), (61, 83), (15, 66), (35, 22), (16, 90), (91, 30), (56, 21), (42, 46), (10, 20), (13, 34), (1, 12), (18, 63), (28, 25), (74, 80), (44, 7), (86, 76), (69, 89), (14, 8), (43, 53), (84, 96), (95, 79), (88, 38), (27, 17), (50, 36), (37, 67), (5, 11), (23, 19), (94, 6), (64, 55), (60, 29), (62, 57), (65, 24), (77, 82)]
+  #2: MSE=0.4164810479 hash=False
+    Blocks: [(48, 9), (87, 71), (58, 78), (49, 93), (73, 72), (31, 26), (81, 75), (0, 54), (41, 51), (39, 32), (4, 52), (45, 33), (3, 40), (2, 70), (68, 47), (59, 92), (61, 83), (15, 66), (35, 22), (16, 90), (91, 30), (56, 21), (42, 46), (10, 20), (13, 34), (1, 12), (18, 63), (28, 25), (74, 80), (44, 7), (86, 76), (69, 89), (14, 8), (43, 53), (84, 96), (95, 79), (88, 38), (27, 17), (50, 36), (37, 67), (5, 11), (23, 19), (94, 6), (64, 55), (60, 29), (65, 24), (62, 57), (77, 82)]
+  #3: MSE=0.4199897349 hash=False
+    Blocks: [(48, 9), (87, 71), (58, 78), (49, 93), (73, 72), (31, 26), (81, 75), (0, 54), (41, 51), (39, 32), (4, 52), (45, 33), (3, 40), (2, 70), (68, 47), (59, 92), (61, 83), (15, 66), (35, 22), (16, 90), (91, 30), (56, 21), (42, 46), (10, 20), (13, 34), (1, 12), (18, 63), (28, 25), (74, 80), (44, 7), (86, 76), (69, 89), (14, 8), (43, 53), (88, 38), (84, 96), (95, 79), (5, 57), (65, 19), (77, 36), (64, 6), (50, 82), (62, 67), (27, 29), (37, 55), (23, 17), (94, 11), (60, 24)]
+  #4: MSE=0.4232762456 hash=False
+  #5: MSE=0.4240420759 hash=False
+  #6: MSE=0.4245176017 hash=False
+  #7: MSE=0.4286093712 hash=False
+  #8: MSE=0.4307736754 hash=False
+  #9: MSE=0.4321176708 hash=False
+  #10: MSE=0.4377127886 hash=False
+
+All 200 beams agree on first 32 blocks
+Consensus prefix: [(48, 9), (87, 71), (58, 78), (49, 93), (73, 72), (31, 26), (81, 75), (0, 54), (41, 51), (39, 32), (4, 52), (45, 33), (3, 40), (2, 70), (68, 47), (59, 92), (61, 83), (15, 66), (35, 22), (16, 90), (91, 30), (56, 21), (42, 46), (10, 20), (13, 34), (1, 12), (18, 63), (28, 25), (74, 80), (44, 7), (86, 76), (69, 89)]
+Results saved to beam_gpu_results.json

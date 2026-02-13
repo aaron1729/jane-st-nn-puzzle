@@ -1,0 +1,7 @@
+Using device: cuda
+Train rows: 4096 / Full rows: 10000, steps=1000, lr=0.03
+step     1/1000 tau=1.0000 loss=1.050108 mse_soft=1.050108 ent_in=3.8712 ent_out=3.8712 rowmax_in=0.0213 rowmax_out=0.0213 discrete_mse=180.313400 best_discrete=180.313400 hash=False elapsed=0.4s
+step    25/1000 tau=0.9103 loss=0.847798 mse_soft=0.847798 ent_in=3.6318 ent_out=3.6663 rowmax_in=0.0447 rowmax_out=0.0444 discrete_mse=6751.874023 best_discrete=180.313400 hash=False elapsed=2.2s
+step    50/1000 tau=0.8254 loss=0.638625 mse_soft=0.638625 ent_in=3.1343 ent_out=3.2267 rowmax_in=0.0944 rowmax_out=0.0886 discrete_mse=2423.770752 best_discrete=180.313400 hash=False elapsed=4.0s
+step    75/1000 tau=0.7484 loss=0.504855 mse_soft=0.504855 ent_in=2.6255 ent_out=2.6821 rowmax_in=0.2000 rowmax_out=0.2009 discrete_mse=838.308655 best_discrete=180.313400 hash=False elapsed=5.8s
+step   100/1000 tau=0.6786 loss=0.400141 mse_soft=0.400141 ent_in=2.0315 ent_out=1.8742 rowmax_in=0.3448 rowmax_out=0.4017 discrete_mse=1171.266724 best_discrete=180.313400 hash=False elapsed=7.6s

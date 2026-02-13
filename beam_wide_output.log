@@ -1,0 +1,70 @@
+Device: cuda
+Config: width=5000 sub=2000 bucket=100 sig=32 chunk=100 seed=42
+Loaded 10000 rows, scoring on 2000. 48 expand, 48 contract. (0.7s)
+  Step  1/48: beam=  234 best=0.679764 worst=0.822217 uniq_last= 234 buckets=   9 max_bkt=100 skips=2070 cands=2304 (0.2s)
+  Step  2/48: beam= 1337 best=0.631839 worst=0.709349 uniq_last= 414 buckets=  50 max_bkt=100 skips=48663 cands=516906 (2.1s)
+  Step  3/48: beam= 2747 best=0.587956 worst=0.641462 uniq_last= 462 buckets=  98 max_bkt=100 skips=47253 cands=2829092 (9.4s)
+  Step  4/48: beam= 5000 best=0.548282 worst=0.590858 uniq_last= 471 buckets= 207 max_bkt=100 skips=30916 cands=5562675 (18.5s)
+  Step  5/48: beam= 5000 best=0.511665 worst=0.548210 uniq_last= 458 buckets= 292 max_bkt=100 skips=11393 cands=9680000 (30.9s)
+  Step  6/48: beam= 5000 best=0.475196 worst=0.513550 uniq_last= 556 buckets= 413 max_bkt=100 skips=4809 cands=9245000 (29.4s)
+  Step  7/48: beam= 5000 best=0.459222 worst=0.485493 uniq_last= 635 buckets= 489 max_bkt=100 skips=4264 cands=8820000 (27.5s)
+  Step  8/48: beam= 5000 best=0.441182 worst=0.460906 uniq_last= 547 buckets= 462 max_bkt=100 skips=6397 cands=8405000 (25.5s)
+  Step  9/48: beam= 5000 best=0.423346 worst=0.441063 uniq_last= 520 buckets= 512 max_bkt=100 skips=5113 cands=8000000 (24.3s)
+  Step 10/48: beam= 5000 best=0.410650 worst=0.424459 uniq_last= 572 buckets= 540 max_bkt=100 skips=3251 cands=7605000 (22.1s)
+  Step 11/48: beam= 5000 best=0.393781 worst=0.410150 uniq_last= 603 buckets= 564 max_bkt=100 skips=2036 cands=7220000 (23.5s)
+  Step 12/48: beam= 5000 best=0.381268 worst=0.397376 uniq_last= 589 buckets= 564 max_bkt=100 skips=1762 cands=6845000 (23.4s)
+  Step 13/48: beam= 5000 best=0.370557 worst=0.385391 uniq_last= 603 buckets= 506 max_bkt=100 skips=1516 cands=6480000 (21.5s)
+  Step 14/48: beam= 5000 best=0.364405 worst=0.375410 uniq_last= 581 buckets= 549 max_bkt=100 skips=818 cands=6125000 (21.9s)
+  Step 15/48: beam= 5000 best=0.357259 worst=0.367051 uniq_last= 600 buckets= 658 max_bkt=100 skips=588 cands=5780000 (22.0s)
+  Step 16/48: beam= 5000 best=0.349059 worst=0.359781 uniq_last= 597 buckets= 702 max_bkt=100 skips=367 cands=5445000 (20.8s)
+  Step 17/48: beam= 5000 best=0.343116 worst=0.353485 uniq_last= 552 buckets= 724 max_bkt=100 skips=186 cands=5120000 (19.3s)
+  Step 18/48: beam= 5000 best=0.339711 worst=0.348104 uniq_last= 552 buckets= 687 max_bkt=100 skips=377 cands=4805000 (18.3s)
+  Step 19/48: beam= 5000 best=0.334767 worst=0.343299 uniq_last= 550 buckets= 635 max_bkt=100 skips=450 cands=4500000 (16.0s)
+  Step 20/48: beam= 5000 best=0.331396 worst=0.338680 uniq_last= 497 buckets= 515 max_bkt=100 skips=712 cands=4205000 (17.3s)
+  Step 21/48: beam= 5000 best=0.327903 worst=0.334359 uniq_last= 461 buckets= 462 max_bkt=100 skips=881 cands=3920000 (16.0s)
+  Step 22/48: beam= 5000 best=0.323782 worst=0.330790 uniq_last= 412 buckets= 412 max_bkt=100 skips=1323 cands=3645000 (15.2s)
+  Step 23/48: beam= 5000 best=0.320031 worst=0.327687 uniq_last= 410 buckets= 368 max_bkt=100 skips=1920 cands=3380000 (14.4s)
+  Step 24/48: beam= 5000 best=0.318518 worst=0.325073 uniq_last= 409 buckets= 336 max_bkt=100 skips=2872 cands=3125000 (13.6s)
+  Step 25/48: beam= 5000 best=0.316625 worst=0.322692 uniq_last= 415 buckets= 333 max_bkt=100 skips=2993 cands=2880000 (13.2s)
+  Step 26/48: beam= 5000 best=0.314289 worst=0.320490 uniq_last= 427 buckets= 332 max_bkt=100 skips=3030 cands=2645000 (12.3s)
+  Step 27/48: beam= 5000 best=0.311326 worst=0.318523 uniq_last= 404 buckets= 347 max_bkt=100 skips=3320 cands=2420000 (11.5s)
+  Step 28/48: beam= 5000 best=0.310724 worst=0.316668 uniq_last= 416 buckets= 370 max_bkt=100 skips=3811 cands=2205000 (10.8s)
+  Step 29/48: beam= 5000 best=0.308954 worst=0.315077 uniq_last= 429 buckets= 367 max_bkt=100 skips=3942 cands=2000000 (10.1s)
+  Step 30/48: beam= 5000 best=0.305634 worst=0.313552 uniq_last= 411 buckets= 351 max_bkt=100 skips=3504 cands=1805000 (9.6s)
+  Step 31/48: beam= 5000 best=0.304919 worst=0.312148 uniq_last= 408 buckets= 360 max_bkt=100 skips=2841 cands=1620000 (9.0s)
+  Step 32/48: beam= 5000 best=0.303709 worst=0.310938 uniq_last= 393 buckets= 344 max_bkt=100 skips=2955 cands=1445000 (8.3s)
+  Step 33/48: beam= 5000 best=0.303533 worst=0.309811 uniq_last= 377 buckets= 346 max_bkt=100 skips=3759 cands=1280000 (7.7s)
+  Step 34/48: beam= 5000 best=0.302246 worst=0.308695 uniq_last= 326 buckets= 313 max_bkt=100 skips=5167 cands=1125000 (7.2s)
+  Step 35/48: beam= 5000 best=0.300675 worst=0.307853 uniq_last= 303 buckets= 307 max_bkt=100 skips=6268 cands=980000 (6.8s)
+  Step 36/48: beam= 5000 best=0.300321 worst=0.307035 uniq_last= 274 buckets= 311 max_bkt=100 skips=5149 cands=845000 (6.5s)
+  Step 37/48: beam= 5000 best=0.299498 worst=0.306400 uniq_last= 243 buckets= 306 max_bkt=100 skips=3249 cands=720000 (5.9s)
+  Step 38/48: beam= 5000 best=0.299230 worst=0.306020 uniq_last= 231 buckets= 339 max_bkt=100 skips=2189 cands=605000 (5.4s)
+  Step 39/48: beam= 5000 best=0.299002 worst=0.305691 uniq_last= 205 buckets= 339 max_bkt=100 skips=1502 cands=500000 (4.9s)
+  Step 40/48: beam= 5000 best=0.298418 worst=0.305709 uniq_last= 182 buckets= 344 max_bkt=100 skips=2162 cands=405000 (4.5s)
+  Step 41/48: beam= 5000 best=0.298571 worst=0.305958 uniq_last= 130 buckets= 328 max_bkt=100 skips=2282 cands=320000 (4.2s)
+  Step 42/48: beam= 5000 best=0.298313 worst=0.306574 uniq_last= 122 buckets= 325 max_bkt=100 skips=1024 cands=245000 (3.8s)
+  Step 43/48: beam= 5000 best=0.298878 worst=0.308729 uniq_last= 109 buckets= 411 max_bkt=100 skips=447 cands=180000 (3.4s)
+  Step 44/48: beam= 5000 best=0.300858 worst=0.313802 uniq_last= 111 buckets= 518 max_bkt=100 skips=194 cands=125000 (3.0s)
+  Step 45/48: beam= 5000 best=0.302667 worst=0.324395 uniq_last=  89 buckets= 683 max_bkt=100 skips=145 cands=80000 (2.9s)
+  Step 46/48: beam= 5000 best=0.301810 worst=0.351069 uniq_last=  87 buckets= 935 max_bkt=100 skips=118 cands=45000 (2.6s)
+  Step 47/48: beam= 5000 best=0.309206 worst=0.421469 uniq_last=  84 buckets=1091 max_bkt=100 skips=6 cands=20000 (2.3s)
+  Step 48/48: beam= 4639 best=0.328983 worst=2.662395 uniq_last=  81 buckets= 837 max_bkt=100 skips=361 cands=5000 (2.0s)
+
+Done in 611s (10.2 min)
+
+Top 10 (re-scored on 10000 samples):
+  #1: MSE=0.3558230400 hash=False
+    [(95, 26), (87, 71), (31, 36), (58, 78), (0, 75), (73, 72), (68, 93), (60, 11), (41, 51), (81, 92), (39, 32), (86, 6), (5, 20), (64, 33), (2, 70), (94, 89), (48, 22), (28, 47), (4, 8), (13, 40), (3, 12), (45, 46), (91, 25), (69, 17), (49, 76), (74, 19), (84, 96), (18, 57), (44, 79), (16, 21), (77, 52), (59, 38), (42, 9), (15, 90), (88, 83), (56, 30), (14, 63), (35, 67), (50, 34), (10, 80), (61, 82), (23, 54), (62, 66), (1, 7), (27, 53), (37, 24), (65, 55), (43, 29)]
+  #2: MSE=0.3736436963 hash=False
+    [(95, 26), (87, 71), (31, 36), (58, 78), (0, 75), (73, 72), (68, 93), (60, 11), (41, 51), (81, 92), (39, 32), (86, 6), (5, 20), (64, 33), (2, 70), (94, 89), (48, 22), (28, 47), (4, 8), (13, 40), (3, 12), (45, 46), (91, 25), (69, 17), (49, 76), (74, 19), (84, 96), (18, 57), (16, 21), (59, 38), (77, 52), (42, 9), (15, 90), (14, 34), (27, 29), (56, 30), (23, 83), (10, 54), (88, 63), (35, 66), (44, 79), (61, 82), (62, 67), (1, 53), (43, 7), (50, 80), (65, 55), (37, 24)]
+  #3: MSE=0.3827595413 hash=False
+    [(95, 26), (87, 71), (31, 36), (58, 78), (0, 75), (73, 72), (68, 93), (60, 11), (41, 51), (81, 92), (39, 32), (86, 6), (5, 20), (64, 33), (2, 70), (94, 89), (48, 22), (28, 47), (4, 8), (13, 40), (3, 12), (45, 46), (91, 25), (69, 17), (49, 76), (74, 19), (84, 96), (18, 57), (16, 21), (59, 38), (77, 52), (42, 9), (15, 90), (14, 34), (27, 29), (44, 79), (56, 30), (10, 54), (88, 63), (35, 66), (62, 67), (23, 83), (1, 7), (50, 24), (43, 80), (61, 55), (65, 82), (37, 53)]
+  #4: MSE=0.3772401810 hash=False
+  #5: MSE=0.3814114928 hash=False
+  #6: MSE=0.3824502528 hash=False
+  #7: MSE=0.3858558238 hash=False
+  #8: MSE=0.3874199092 hash=False
+  #9: MSE=0.3701050282 hash=False
+  #10: MSE=0.3853238225 hash=False
+
+Saved to beam_wide_results.json (MSE=0.355823)

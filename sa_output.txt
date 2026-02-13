@@ -1,0 +1,8 @@
+Using device: cuda
+============================================================
+Phase 1: Fast SA (subsampled, 1000 pts) from beam + local
+============================================================
+Beam MSE (full): 0.509697
+Local search MSE (full): 0.449238
+
+SA from local search result (subsampled)...

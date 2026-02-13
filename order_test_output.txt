@@ -1,0 +1,160 @@
+Using device: cuda
+============================================================
+Test 1: Sequential vs. order-independent residuals
+============================================================
+Sequential MSE(out, pred): 0.509697
+Independent MSE(out, pred): 4.939430
+||h_seq - h_indep||² (per dim): 312.095123
+h_seq norm: 389.943359
+total_delta norm: 8.273874
+
+============================================================
+Test 2: Per-block residual magnitudes
+============================================================
+  Block  0 (87,71): ||delta||²=0.051192 ||h||²=0.639927 ratio=0.0800
+  Block  1 (31,36): ||delta||²=0.062216 ||h||²=0.590312 ratio=0.1054
+  Block  2 (58,78): ||delta||²=0.078252 ||h||²=0.572191 ratio=0.1368
+  Block  3 (73,72): ||delta||²=0.060809 ||h||²=0.588905 ratio=0.1033
+  Block  4 (18, 6): ||delta||²=0.095352 ||h||²=0.677431 ratio=0.1408
+  Block  5 (49,93): ||delta||²=0.173036 ||h||²=0.928095 ratio=0.1864
+  Block  6 (43,11): ||delta||²=0.067847 ||h||²=0.907183 ratio=0.0748
+  Block  7 (95,33): ||delta||²=0.113321 ||h||²=1.072955 ratio=0.1056
+  Block  8 (81,51): ||delta||²=0.387167 ||h||²=1.169225 ratio=0.3311
+  Block  9 (68,26): ||delta||²=0.142033 ||h||²=1.773709 ratio=0.0801
+  ...
+  Block 40 (42,92): ||delta||²=2.668070 ||h||²=143.508789 ratio=0.0186
+  Block 41 (27,67): ||delta||²=8.376079 ||h||²=155.226501 ratio=0.0540
+  Block 42 ( 1,24): ||delta||²=11.553212 ||h||²=176.774933 ratio=0.0654
+  Block 43 (77,89): ||delta||²=7.838953 ||h||²=213.842941 ratio=0.0367
+  Block 44 (50, 7): ||delta||²=8.966187 ||h||²=232.402832 ratio=0.0386
+  Block 45 (14,17): ||delta||²=11.961036 ||h||²=252.582123 ratio=0.0474
+  Block 46 (86,82): ||delta||²=5.952683 ||h||²=299.104523 ratio=0.0199
+  Block 47 (23,57): ||delta||²=12.993948 ||h||²=321.555389 ratio=0.0404
+
+============================================================
+Test 3: Order-independent pairing search
+============================================================
+Target mean: -0.026276, std: 0.879824
+Contributions shape: torch.Size([48, 48, 10000])
+
+Equal-share assignment pairs: [(0, 38), (1, 46), (2, 52), (3, 57), (4, 70), (5, 24), (10, 72), (13, 78), (14, 30), (15, 21)]...
+Overlap with beam: 0/48
+
+Greedy sequential assignment: overlap with beam = 0/48
+Greedy pairs: [(43, 40), (69, 38), (65, 20), (64, 33), (28, 19), (4, 32), (81, 12), (5, 9), (94, 54), (41, 53)]...
+Greedy pairs independent MSE: 2.154362
+Beam pairs independent MSE: 4.939430
+
+============================================================
+Test 4: Which features does each expand/contract piece focus on?
+============================================================
+
+Top features per expand piece (by L2 norm of weight column):
+  Expand 0: top features = [31, 10, 42, 1, 21] (norms: [1.1618926525115967, 1.1400010585784912, 1.1100980043411255, 1.1019976139068604, 1.0959206819534302])
+  Expand 1: top features = [25, 36, 27, 16, 21] (norms: [1.1080138683319092, 1.04191255569458, 1.0307912826538086, 1.017209768295288, 1.0076459646224976])
+  Expand 2: top features = [20, 37, 28, 31, 41] (norms: [1.252849817276001, 1.1669297218322754, 1.1536250114440918, 1.147851824760437, 1.1314785480499268])
+  Expand 3: top features = [21, 32, 12, 10, 25] (norms: [1.105738639831543, 1.046702265739441, 1.0382258892059326, 1.029543399810791, 1.0200906991958618])
+  Expand 4: top features = [19, 37, 24, 25, 44] (norms: [1.0680686235427856, 1.059556484222412, 1.057597041130066, 1.0535764694213867, 1.0505236387252808])
+
+Expand piece feature focus (top-3 features per piece):
+  Expand  0: [31, 10, 42]
+  Expand  1: [25, 36, 27]
+  Expand  2: [20, 37, 28]
+  Expand  3: [21, 32, 12]
+  Expand  4: [19, 37, 24]
+  Expand  5: [38, 37, 28]
+  Expand 10: [16, 14, 32]
+  Expand 13: [33, 23, 28]
+  Expand 14: [18, 5, 37]
+  Expand 15: [19, 32, 23]
+  Expand 16: [37, 14, 16]
+  Expand 18: [9, 20, 32]
+  Expand 23: [36, 32, 26]
+  Expand 27: [38, 42, 34]
+  Expand 28: [33, 37, 38]
+  Expand 31: [20, 44, 5]
+  Expand 35: [12, 11, 7]
+  Expand 37: [32, 31, 10]
+  Expand 39: [14, 21, 25]
+  Expand 41: [17, 18, 14]
+  Expand 42: [20, 5, 11]
+  Expand 43: [28, 27, 45]
+  Expand 44: [14, 33, 0]
+  Expand 45: [9, 22, 32]
+  Expand 48: [29, 26, 33]
+  Expand 49: [31, 5, 41]
+  Expand 50: [19, 34, 14]
+  Expand 56: [21, 22, 18]
+  Expand 58: [27, 28, 31]
+  Expand 59: [34, 20, 28]
+  Expand 60: [41, 40, 37]
+  Expand 61: [25, 33, 21]
+  Expand 62: [43, 29, 26]
+  Expand 64: [5, 33, 44]
+  Expand 65: [38, 28, 33]
+  Expand 68: [6, 18, 28]
+  Expand 69: [29, 27, 28]
+  Expand 73: [44, 5, 8]
+  Expand 74: [31, 47, 10]
+  Expand 77: [15, 17, 19]
+  Expand 81: [28, 26, 33]
+  Expand 84: [14, 21, 10]
+  Expand 86: [14, 21, 18]
+  Expand 87: [23, 19, 44]
+  Expand 88: [21, 22, 17]
+  Expand 91: [13, 4, 32]
+  Expand 94: [12, 9, 4]
+  Expand 95: [32, 37, 41]
+
+Contract piece feature focus (top-3 features per piece):
+  Contract  6: [22, 4, 17]
+  Contract  7: [29, 36, 32]
+  Contract  8: [45, 41, 28]
+  Contract  9: [29, 43, 27]
+  Contract 11: [38, 45, 44]
+  Contract 12: [2, 3, 40]
+  Contract 17: [38, 43, 39]
+  Contract 19: [9, 15, 45]
+  Contract 20: [25, 12, 33]
+  Contract 21: [46, 45, 43]
+  Contract 22: [28, 39, 2]
+  Contract 24: [7, 29, 31]
+  Contract 25: [35, 31, 14]
+  Contract 26: [42, 38, 30]
+  Contract 29: [10, 32, 4]
+  Contract 30: [25, 32, 38]
+  Contract 32: [29, 38, 17]
+  Contract 33: [45, 38, 44]
+  Contract 34: [28, 43, 27]
+  Contract 36: [39, 5, 32]
+  Contract 38: [19, 5, 35]
+  Contract 40: [38, 44, 5]
+  Contract 46: [38, 44, 42]
+  Contract 47: [9, 29, 8]
+  Contract 51: [26, 44, 0]
+  Contract 52: [25, 38, 5]
+  Contract 53: [17, 29, 39]
+  Contract 54: [38, 17, 29]
+  Contract 55: [38, 45, 5]
+  Contract 57: [13, 25, 18]
+  Contract 63: [11, 25, 22]
+  Contract 66: [12, 29, 38]
+  Contract 67: [15, 42, 28]
+  Contract 70: [5, 4, 39]
+  Contract 71: [35, 29, 25]
+  Contract 72: [38, 29, 10]
+  Contract 75: [4, 22, 35]
+  Contract 76: [28, 45, 2]
+  Contract 78: [38, 22, 26]
+  Contract 79: [46, 28, 4]
+  Contract 80: [8, 0, 46]
+  Contract 82: [5, 33, 32]
+  Contract 83: [26, 43, 19]
+  Contract 89: [28, 2, 46]
+  Contract 90: [38, 22, 5]
+  Contract 92: [36, 1, 15]
+  Contract 93: [4, 35, 17]
+  Contract 96: [28, 43, 44]
+
+Feature-based pairing (match by top-3 feature overlap):
+Feature-based pairs overlap with beam: 0/48

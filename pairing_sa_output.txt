@@ -1,0 +1,122 @@
+Using device: cuda
+Testing greedy ordering for starting pairings...
+Beam-10 pairings + greedy order: MSE=5.357727 (0.9s)
+Beam-200 pairings + greedy order: MSE=1.471614 (0.7s)
+Beam-10 original ordering: MSE=0.509697
+Beam-200 original ordering: MSE=0.409771
+
+============================================================
+SA over pairings (greedy ordering for each trial)
+============================================================
+
+--- SA from beam-200 pairings (greedy ordering) ---
+  [PSA-200] it=100/3000 T=2.13e-01 curr=1.177265 best=0.699059 acc=18 imp=2 (1.3/s)
+  [PSA-200] it=200/3000 T=1.51e-01 curr=0.712397 best=0.610261 acc=26 imp=3 (1.3/s)
+  [PSA-200] it=300/3000 T=1.07e-01 curr=0.556038 best=0.556038 acc=27 imp=4 (1.4/s)
+  [PSA-200] it=400/3000 T=7.59e-02 curr=0.692076 best=0.556038 acc=32 imp=4 (1.4/s)
+  [PSA-200] it=500/3000 T=5.38e-02 curr=0.584057 best=0.556038 acc=37 imp=4 (1.4/s)
+  [PSA-200] it=600/3000 T=3.82e-02 curr=0.584057 best=0.556038 acc=37 imp=4 (1.4/s)
+  [PSA-200] it=700/3000 T=2.71e-02 curr=0.612146 best=0.556038 acc=39 imp=4 (1.4/s)
+  [PSA-200] it=800/3000 T=1.92e-02 curr=0.661205 best=0.556038 acc=40 imp=4 (1.4/s)
+  [PSA-200] it=900/3000 T=1.36e-02 curr=0.634189 best=0.556038 acc=41 imp=4 (1.4/s)
+  [PSA-200] it=1000/3000 T=9.65e-03 curr=0.634189 best=0.556038 acc=41 imp=4 (1.4/s)
+  [PSA-200] it=1100/3000 T=6.85e-03 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1200/3000 T=4.86e-03 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1300/3000 T=3.44e-03 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1400/3000 T=2.44e-03 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1500/3000 T=1.73e-03 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1600/3000 T=1.23e-03 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1700/3000 T=8.71e-04 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1800/3000 T=6.18e-04 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=1900/3000 T=4.38e-04 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2000/3000 T=3.11e-04 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2100/3000 T=2.20e-04 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2200/3000 T=1.56e-04 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2300/3000 T=1.11e-04 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2400/3000 T=7.86e-05 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2500/3000 T=5.57e-05 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2600/3000 T=3.95e-05 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2700/3000 T=2.80e-05 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2800/3000 T=1.99e-05 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=2900/3000 T=1.41e-05 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+  [PSA-200] it=3000/3000 T=1.00e-05 curr=0.616157 best=0.556038 acc=42 imp=4 (1.4/s)
+
+Best from beam-200 pairings: MSE=0.556038
+
+--- SA from beam-10 pairings (greedy ordering) ---
+  [PSA-10] it=100/3000 T=2.13e-01 curr=0.795469 best=0.585811 acc=7 imp=4 (1.6/s)
+  [PSA-10] it=200/3000 T=1.51e-01 curr=1.065140 best=0.585811 acc=15 imp=4 (1.5/s)
+  [PSA-10] it=300/3000 T=1.07e-01 curr=0.944531 best=0.585811 acc=25 imp=4 (1.5/s)
+  [PSA-10] it=400/3000 T=7.59e-02 curr=0.761290 best=0.585811 acc=41 imp=4 (1.5/s)
+  [PSA-10] it=500/3000 T=5.38e-02 curr=0.753306 best=0.585811 acc=48 imp=4 (1.5/s)
+  [PSA-10] it=600/3000 T=3.82e-02 curr=0.822176 best=0.585811 acc=56 imp=4 (1.5/s)
+  [PSA-10] it=700/3000 T=2.71e-02 curr=0.727549 best=0.585811 acc=58 imp=4 (1.5/s)
+  [PSA-10] it=800/3000 T=1.92e-02 curr=0.705120 best=0.585811 acc=59 imp=4 (1.5/s)
+  [PSA-10] it=900/3000 T=1.36e-02 curr=0.705120 best=0.585811 acc=59 imp=4 (1.5/s)
+  [PSA-10] it=1000/3000 T=9.65e-03 curr=0.700866 best=0.585811 acc=60 imp=4 (1.5/s)
+  [PSA-10] it=1100/3000 T=6.85e-03 curr=0.700866 best=0.585811 acc=60 imp=4 (1.5/s)
+  [PSA-10] it=1200/3000 T=4.86e-03 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=1300/3000 T=3.44e-03 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=1400/3000 T=2.44e-03 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=1500/3000 T=1.73e-03 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=1600/3000 T=1.23e-03 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=1700/3000 T=8.71e-04 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=1800/3000 T=6.18e-04 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=1900/3000 T=4.38e-04 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=2000/3000 T=3.11e-04 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=2100/3000 T=2.20e-04 curr=0.679722 best=0.585811 acc=61 imp=4 (1.5/s)
+  [PSA-10] it=2200/3000 T=1.56e-04 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=2300/3000 T=1.11e-04 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=2400/3000 T=7.86e-05 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=2500/3000 T=5.57e-05 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=2600/3000 T=3.95e-05 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=2700/3000 T=2.80e-05 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=2800/3000 T=1.99e-05 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=2900/3000 T=1.41e-05 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+  [PSA-10] it=3000/3000 T=1.00e-05 curr=0.670402 best=0.585811 acc=62 imp=4 (1.5/s)
+
+Best from beam-10 pairings: MSE=0.585811
+
+--- SA from random pairings ---
+  [PSA-rnd] it=100/3000 T=3.76e-01 curr=7.355975 best=7.355975 acc=15 imp=13 (1.4/s)
+  [PSA-rnd] it=200/3000 T=2.83e-01 curr=7.355975 best=7.355975 acc=15 imp=13 (1.5/s)
+  [PSA-rnd] it=300/3000 T=2.13e-01 curr=7.355975 best=7.355975 acc=15 imp=13 (1.5/s)
+  [PSA-rnd] it=400/3000 T=1.61e-01 curr=6.483988 best=6.483988 acc=16 imp=14 (1.5/s)
+  [PSA-rnd] it=500/3000 T=1.21e-01 curr=4.492178 best=4.492178 acc=18 imp=16 (1.5/s)
+  [PSA-rnd] it=600/3000 T=9.10e-02 curr=3.589633 best=3.563471 acc=22 imp=17 (1.5/s)
+  [PSA-rnd] it=700/3000 T=6.85e-02 curr=3.390387 best=3.390387 acc=23 imp=18 (1.5/s)
+  [PSA-rnd] it=800/3000 T=5.16e-02 curr=1.250067 best=1.250067 acc=24 imp=19 (1.5/s)
+  [PSA-rnd] it=900/3000 T=3.88e-02 curr=1.250067 best=1.250067 acc=24 imp=19 (1.5/s)
+  [PSA-rnd] it=1000/3000 T=2.92e-02 curr=1.169131 best=1.169131 acc=25 imp=20 (1.5/s)
+  [PSA-rnd] it=1100/3000 T=2.20e-02 curr=1.070347 best=0.957726 acc=28 imp=22 (1.5/s)
+  [PSA-rnd] it=1200/3000 T=1.66e-02 curr=0.831926 best=0.803692 acc=32 imp=24 (1.5/s)
+  [PSA-rnd] it=1300/3000 T=1.25e-02 curr=0.786976 best=0.786976 acc=34 imp=25 (1.5/s)
+  [PSA-rnd] it=1400/3000 T=9.39e-03 curr=0.758257 best=0.758257 acc=35 imp=26 (1.5/s)
+  [PSA-rnd] it=1500/3000 T=7.07e-03 curr=0.758257 best=0.758257 acc=35 imp=26 (1.5/s)
+  [PSA-rnd] it=1600/3000 T=5.32e-03 curr=0.758257 best=0.758257 acc=35 imp=26 (1.5/s)
+  [PSA-rnd] it=1700/3000 T=4.01e-03 curr=0.758257 best=0.750205 acc=37 imp=27 (1.5/s)
+  [PSA-rnd] it=1800/3000 T=3.02e-03 curr=0.758257 best=0.750205 acc=37 imp=27 (1.5/s)
+  [PSA-rnd] it=1900/3000 T=2.27e-03 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2000/3000 T=1.71e-03 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2100/3000 T=1.29e-03 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2200/3000 T=9.69e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2300/3000 T=7.30e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.4/s)
+  [PSA-rnd] it=2400/3000 T=5.49e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2500/3000 T=4.14e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2600/3000 T=3.11e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2700/3000 T=2.34e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2800/3000 T=1.76e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=2900/3000 T=1.33e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+  [PSA-rnd] it=3000/3000 T=1.00e-04 curr=0.695477 best=0.695477 acc=38 imp=28 (1.5/s)
+
+Best from random pairings: MSE=0.695477
+
+============================================================
+Overall best: beam-200, MSE=0.556038
+Ordering: [(87, 71), (58, 78), (39, 32), (4, 52), (73, 83), (61, 21), (41, 51), (64, 11), (60, 29), (0, 54), (94, 19), (74, 80), (10, 38), (45, 72), (2, 70), (49, 30), (18, 63), (43, 53), (13, 46), (27, 26), (68, 79), (50, 20), (42, 36), (91, 33), (86, 76), (84, 96), (16, 40), (88, 92), (35, 66), (31, 6), (14, 12), (69, 89), (37, 22), (77, 82), (62, 57), (59, 67), (65, 7), (5, 93), (23, 25), (44, 17), (3, 75), (1, 47), (48, 34), (15, 55), (95, 8), (28, 9), (56, 24), (81, 90)]
+
+--- Refining best with beam search ordering (width=10) ---
+Beam-refined MSE: 5.318436 (6.7s)
+Hash match: False
+Permutation: 87,71,58,78,39,32,4,52,73,83,61,21,41,51,64,11,60,29,0,54,94,19,74,80,10,38,45,72,2,70,49,30,18,63,43,53,13,46,27,26,68,79,50,20,42,36,91,33,86,76,84,96,16,40,88,92,35,66,31,6,14,12,69,89,37,22,77,82,62,57,59,67,65,7,5,93,23,25,44,17,3,75,1,47,48,34,15,55,95,8,28,9,56,24,81,90,85
+Results saved to pairing_sa_result.json
