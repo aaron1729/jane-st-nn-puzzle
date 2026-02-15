@@ -1,6 +1,0 @@
-updated_utc=2026-02-12T18:03:54Z
-batch=315
-best_file=overnight_b151_j1.json
-best_discrete=0.6155110001564026
-hash_found=False
-done_utc=2026-02-12T18:03:54Z

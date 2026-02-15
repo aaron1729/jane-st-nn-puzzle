@@ -1,2 +1,5 @@
 data/
 venv/
+results/sinkhorn_overnight/
+results/sinkhorn_sweeps/
+__pycache__/

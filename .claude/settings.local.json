@@ -6,7 +6,8 @@
       "mcp__ide__executeCode",
       "Bash(python3:*)",
       "Bash(ssh:*)",
-      "Bash(scp:*)"
+      "Bash(scp:*)",
+      "Bash(ls:*)"
     ]
   }
 }

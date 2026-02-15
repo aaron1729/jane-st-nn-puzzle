@@ -45,7 +45,7 @@ Best ordering (from stochastic beam + SA):
 (64,79), (16,71), (0,34), (69,83), (5,9), (10,38), (37,6), (81,93)
 ```
 
-Saved in `/root/puzzle/stochastic_beam_result.json` on GPU.
+Saved in `results/stochastic_beam_result.json` (local) and `/root/puzzle/stochastic_beam_result.json` (GPU).
 
 ## Pairing Consensus
 
@@ -91,39 +91,44 @@ Pairing and ordering are **coupled, not separable**. Correct pairings can only b
 
 Beam search with MSE scoring is the only approach that produces reasonable solutions. SA refinement consistently shaves 0.05–0.15 off beam results.
 
-## Upcoming Plans
+## Also Doesn't Work (Experiments 24–27)
 
-### Priority 1: Wide beam search (beam-5000)
-- Beam-10 → beam-200 found different, better basins. Beam-5000 may find the correct basin.
-- Memory: 5000 × 10000 × 48 × 4 bytes ≈ 9.6 GB (fits in 24GB GPU)
-- Estimated runtime: ~30 min
-- Key question: does the MSE plateau break, or do we just find another 0.4-ish local minimum?
-
-### Priority 2: Run quick trajectory coherence test
-- Compute step alignment (cosine between consecutive updates), path curvature, backtracking for SA-best vs random
-- Likely dead (same fundamental issue as adjacency), but cheap to confirm
-- If it shows signal, could use as SA move bias
-
-### Priority 3: Better SA
-- If wider beam finds new basins, SA refinement of top candidates
-- Consider multi-swap moves (change 5–10 pairings simultaneously)
+- **Trajectory coherence** (exp 24–25): step alignment, curvature, backtracking, path length — all metrics are norm-growth proxies. Zero signal after controlling for final norm via partial correlation.
+- **`true` signal** (exp 26): R²(x → pred-true) = 0.023. Residual is unpredictable noise. Useless for denoising/whitening.
+- **Wide beam (beam-5000)** (exp 27): MSE=0.356 raw, no new basin. Same 0.3–0.4 range. MSE reversal in final steps (myopia). All top-10 share first ~27 blocks despite diversity forcing.
+- **Sinkhorn continuous relaxation** (Codex overnight, 1260 runs): soft MSE ~0.3–0.4 but discrete rounding gives 0.616+ at best. Massive relaxation gap — blended weights don't approximate any real discrete network.
 
 ## Reports
 
-Detailed experiment logs shared with ChatGPT for strategic discussion:
+Detailed experiment logs in `reports/`:
 - `report_01.md`: Initial experiments (1–13), beam search, weight analysis
 - `report_02.md`: Experiments 14–19, crossover, parallel tempering, stochastic beam
 - `report_03.md`: Experiments 20–21, stochastic beam results, residual magnitudes
 - `report_04.md`: Experiment 22, weight norm analysis, rescaling symmetry
 - `report_05.md`: Experiment 23, adjacency gate entropy test
+- `report_06.md`: Experiments 24–27, trajectory, true signal, wide beam, diversity
 
-## Key Scripts
+## Project Layout
 
-| Script | Purpose |
-|---|---|
-| `solve_beam_gpu.py` | GPU beam search (configurable width) |
-| `solve_stochastic_beam.py` | Stochastic beam + SA refinement |
-| `solve_pt.py` | Parallel tempering SA |
-| `analyze_norms.py` | Weight norm analysis |
-| `analyze_residuals.py` | Residual magnitude analysis |
-| `test_adjacency.py` | Adjacency gate entropy test |
+```
+├── CLAUDE.md                  # This file
+├── data/                      # Input data and pieces
+│   ├── historical_data.csv
+│   └── pieces/piece_{0..96}.pth
+├── scripts/                   # All solver and analysis scripts
+│   ├── solve_beam_gpu.py      # GPU beam search (configurable width)
+│   ├── solve_beam_wide.py     # Beam-5000 with diversity forcing
+│   ├── solve_stochastic_beam.py # Stochastic beam + SA refinement
+│   ├── solve_sinkhorn.py      # Sinkhorn continuous relaxation
+│   ├── solve_pt.py            # Parallel tempering SA
+│   ├── test_trajectory*.py    # Trajectory coherence tests
+│   ├── test_true_signal.py    # True signal diagnostic
+│   └── ...                    # Other solvers and analysis
+├── results/                   # Result JSON files
+│   ├── stochastic_beam_result.json  # Best result (MSE=0.274)
+│   ├── beam_wide_results.json       # Beam-5000 (MSE=0.356)
+│   ├── sinkhorn_overnight/    # 1260-run Sinkhorn sweep
+│   └── sinkhorn_sweeps/       # Earlier Sinkhorn experiments
+├── logs/                      # Output logs from runs
+└── reports/                   # Experiment reports (01–06)
+```
